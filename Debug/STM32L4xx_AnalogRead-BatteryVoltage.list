@@ -1178,7 +1178,7 @@ void readBat(){
  8000db8:	f7ff ff16 	bl	8000be8 <__aeabi_d2f>
  8000dbc:	4603      	mov	r3, r0
  8000dbe:	603b      	str	r3, [r7, #0]
-	bat = ((vadc * (5.1 + 10) / 10) * 100) - 200;
+	bat = ((vadc * (5.23 + 10) / 10) * 100) - 200;
  8000dc0:	6838      	ldr	r0, [r7, #0]
  8000dc2:	f7ff fbc1 	bl	8000548 <__aeabi_f2d>
  8000dc6:	a320      	add	r3, pc, #128	; (adr r3, 8000e48 <readBat+0x138>)
@@ -1232,8 +1232,8 @@ void readBat(){
  8000e3c:	f3af 8000 	nop.w
  8000e40:	66666666 	.word	0x66666666
  8000e44:	400a6666 	.word	0x400a6666
- 8000e48:	33333333 	.word	0x33333333
- 8000e4c:	402e3333 	.word	0x402e3333
+ 8000e48:	8f5c28f6 	.word	0x8f5c28f6
+ 8000e4c:	402e75c2 	.word	0x402e75c2
  8000e50:	48000400 	.word	0x48000400
  8000e54:	200001f8 	.word	0x200001f8
  8000e58:	42c80000 	.word	0x42c80000

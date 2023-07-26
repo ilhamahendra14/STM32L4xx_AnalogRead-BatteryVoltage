@@ -85,7 +85,7 @@ void readBat(){
 	HAL_GPIO_WritePin(ls_bat_GPIO_Port, ls_bat_Pin, RESET);
 	adc_val = adc_val / 100;
 	float vadc = (adc_val / 4096) * 3.3;
-	bat = ((vadc * (5.1 + 10) / 10) * 100) - 200;
+	bat = ((vadc * (5.23 + 10) / 10) * 100) - 200;
 	printf("battery voltage : %.2fV\n", (bat + 200)/100.0);
 }
 /* USER CODE END 0 */
